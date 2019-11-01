@@ -1,0 +1,28 @@
+.header {
+	background-color: #636463;
+	padding: 1rem 1rem 0 1rem;
+	color: white;
+	display: flex;
+}
+
+.header__logo {
+	height: 5rem;
+	display: block;
+}
+
+.header__title {
+	font-size: 1.5em;
+	flex: 1;
+}
+
+.header__title--unread-count {
+	background: #ee3524;
+	color: white;
+	border-radius: 2px;
+	border: solid 1px white;
+	font-size: 1rem;
+	line-height: 1rem;
+	height: 1rem;
+	padding: 0.2rem 0.3rem;
+	margin-left: 0.3rem;
+}

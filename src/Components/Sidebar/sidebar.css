@@ -1,0 +1,28 @@
+.NotesSidebar {
+	background: #a19689;
+	border-right: solid 1px #636463;
+	color: white;
+}
+
+.NotesSidebar__title {
+	margin: 0;
+	font-size: 1.25rem;
+	padding: 0.2rem;
+}
+
+.NotesSidebarItem {
+	padding: 0 0.3rem;
+	display: flex;
+	flex-direction: row;
+	border-top: solid 1px #636463;
+}
+
+.NotesSidebarItem.selected {
+	background: #ead592;
+}
+
+.NotesSidebarItem__title {
+	margin: 0.3rem 0;
+	display: inline-block;
+	flex: 1;
+}
