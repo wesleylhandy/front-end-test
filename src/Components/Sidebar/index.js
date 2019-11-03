@@ -11,8 +11,9 @@ const getNotesRows = (notes, currentNoteIndex, selectNote) => {
 			className={classNames("NotesSidebarItem", {
 				selected: idx === currentNoteIndex,
 			})}
-			onClick={(e) => selectNote(idx)}
+			onClick={e => selectNote(idx)}
 			id={`note-${idx}`}
+			role="button"
 		>
 			<h4 className="NotesSidebarItem__title">{subject}</h4>
 			{read && <img alt="Check Mark" src={checkMark} />}
@@ -22,8 +23,6 @@ const getNotesRows = (notes, currentNoteIndex, selectNote) => {
 
 const Sidebar = ({ notes = [], currentNoteIndex, selectNote }) => (
 	<section className="NotesSidebar">
-		{/* TODO this section should be rendered as a sidebar, left of the NoteDetails, taking up
-    the full height of the space beneath the header. */}
 		<h2 className="NotesSidebar__title">Available Notes:</h2>
 		<div className="NotesSidebar__list">
 			{notes.length && getNotesRows(notes, currentNoteIndex, selectNote)}

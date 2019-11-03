@@ -2,6 +2,11 @@
 	background: #a19689;
 	border-right: solid 1px #636463;
 	color: white;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 1;
+	-ms-grid-column: 1;
+	grid-area: sidebar;
+	align-self: stretch;
 }
 
 .NotesSidebar__title {
@@ -15,6 +20,7 @@
 	display: flex;
 	flex-direction: row;
 	border-top: solid 1px #636463;
+	cursor: pointer;
 }
 
 .NotesSidebarItem.selected {

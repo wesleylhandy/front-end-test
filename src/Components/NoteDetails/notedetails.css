@@ -1,3 +1,8 @@
 .NoteDetails {
 	padding: 1rem;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 1;
+	-ms-grid-column: 2;
+	grid-area: details;
+	align-self: stretch;
 }

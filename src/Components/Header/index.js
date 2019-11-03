@@ -6,12 +6,9 @@ const Header = ({ unreadCount = 0 }) => (
 	<header className="header">
 		<img src={logo} className="header__logo" alt="logo" />
 		<h1 className="header__title">Notes Viewer Test App</h1>
-		<div>
+		<div className="header__unread-count">
 			Unread:
-			<span className="header__title--unread-count">
-				{/* TODO this should be a count of only the unread messages */}
-				{ unreadCount }
-			</span>
+			<span className="header__unread-count--count">{unreadCount}</span>
 		</div>
 	</header>
 );

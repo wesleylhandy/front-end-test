@@ -3,29 +3,42 @@ import { AppContext } from "../Context/AppProvider";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import NoteDetails from "./NoteDetails";
+import ErrorBoundary from "./ErrorBoundary";
+
+import "./app.css";
 
 class App extends Component {
 	static contextType = AppContext;
 
-	componentWillMount() {
+	componentDidMount() {
 		this.context.getNotes();
 	}
 
 	render() {
-		const { notes, markAsRead, selectNote, currentNoteIndex } = this.context;
+		const {
+			notes,
+			toggleReadStatus,
+			selectNote,
+			currentNoteIndex,
+		} = this.context;
 		const currentNote =
 			notes.length && currentNoteIndex > -1 ? notes[currentNoteIndex] : {};
-		const unreadCount = notes.reduce((count, {read}) => read ? count : count + 1, 0);
+		const unreadCount = notes.reduce(
+			(count, { read }) => (read ? count : count + 1),
+			0
+		);
 		return (
-			<div className="App">
-				<Header unreadCount={unreadCount} />
-				<Sidebar
-					notes={notes}
-					selectNote={selectNote}
-					currentNoteIndex={currentNoteIndex}
-				/>
-				<NoteDetails note={currentNote} markAsRead={markAsRead} />
-			</div>
+			<ErrorBoundary>
+				<div className="App">
+					<Header unreadCount={unreadCount} />
+					<Sidebar
+						notes={notes}
+						selectNote={selectNote}
+						currentNoteIndex={currentNoteIndex}
+					/>
+					<NoteDetails note={currentNote} toggleReadStatus={toggleReadStatus} />
+				</div>
+			</ErrorBoundary>
 		);
 	}
 }

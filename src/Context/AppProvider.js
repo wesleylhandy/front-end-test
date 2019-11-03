@@ -5,7 +5,7 @@ export const AppContext = React.createContext();
 
 const ADD_NOTES = "ADD_NOTES";
 const SELECT_NOTE = "SELECT_NOTE";
-const MARK_AS_READ = "MARK_AS_READ";
+const TOGGLE_READ_STATUS = "TOGGLE_READ_STATUS";
 
 const reducer = (state, action) => {
 	const { type, notes, currentNoteIndex } = action;
@@ -20,9 +20,11 @@ const reducer = (state, action) => {
 				...state,
 				currentNoteIndex,
 			};
-		case MARK_AS_READ:
+		case TOGGLE_READ_STATUS:
 			const notesState = [...state.notes];
-			notesState[state.currentNoteIndex].read = true;
+			notesState[state.currentNoteIndex].read = !notesState[
+				state.currentNoteIndex
+			].read;
 			return {
 				...state,
 				notes: notesState,
@@ -38,7 +40,7 @@ class AppProvider extends Component {
 		currentNoteIndex: -1,
 		getNotes: async () => {
 			try {
-                const notes = await callApi("/notes", { method: "GET" });
+				const notes = await callApi("/notes", { method: "GET" });
 				this.setState(state => reducer(state, { type: ADD_NOTES, notes }));
 			} catch (e) {
 				console.error({ e });
@@ -50,10 +52,10 @@ class AppProvider extends Component {
 				reducer(state, { type: SELECT_NOTE, currentNoteIndex: idx })
 			);
 		},
-		markAsRead: () => {
+		toggleReadStatus: () => {
 			// this function is called by NoteDetails, which displays the currentNoteIndex
 			// so this should only mark as read the current note index
-			this.setState(state => reducer(state, { type: MARK_AS_READ }));
+			this.setState(state => reducer(state, { type: TOGGLE_READ_STATUS }));
 		},
 	};
 	render() {
