@@ -23,6 +23,11 @@
 	cursor: pointer;
 }
 
+.NotesSidebarItem.empty {
+	cursor: default;
+	padding: 0.3rem;
+}
+
 .NotesSidebarItem.selected {
 	background: #ead592;
 }
