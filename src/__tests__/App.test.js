@@ -1,14 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import AppProvider from "../Context/AppProvider";
-import App from "../Components/App";
+import { create } from "react-test-renderer";
+import App from "../Components/__mocks__/App";
+import AppProvider from "../Context/__mocks__/AppProvider";
 
-it("renders without crashing", () => {
-	const div = document.createElement("div");
-	ReactDOM.render(
+/**** NEEDS IMPROVEMENT ****/
+/*	This tests the functionality of two mock component
+/*  that match the current state of the components
+/*  but won't catch changes...
+/*  I'm not all that certain how to test Context Api properly
+/**** 					****/
+
+it("renders correctly", () => {
+	const tree = create(
 		<AppProvider>
 			<App />
-		</AppProvider>,
-		div
-	);
+		</AppProvider>
+	).toJSON();
+	expect(tree).toMatchSnapshot();
 });

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./header.css";
 import logo from "../../SVG/logo.svg";
 
@@ -12,5 +13,9 @@ const Header = ({ unreadCount = 0 }) => (
 		</div>
 	</header>
 );
+
+Header.propTypes = {
+	unreadCount: PropTypes.number.isRequired,
+};
 
 export default Header;

@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import "./button.css";
 
 const Button = ({ style = {}, clickHandler, text }) => (
@@ -7,5 +7,11 @@ const Button = ({ style = {}, clickHandler, text }) => (
 		{text}
 	</button>
 );
+
+Button.propTypes = {
+	style: PropTypes.object,
+	clickHandler: PropTypes.func,
+	text: PropTypes.string.isRequired,
+};
 
 export default Button;

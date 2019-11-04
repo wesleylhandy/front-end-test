@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays the right text when the props is updated 1`] = `
+<button
+  className="Button"
+  onClick={undefined}
+  style={Object {}}
+>
+  Some Other Text
+</button>
+`;
+
+exports[`renders correctly 1`] = `
+<button
+  className="Button"
+  onClick={[Function]}
+  style={
+    Object {
+      "background": "black",
+      "color": "white",
+    }
+  }
+>
+  Initial Value
+</button>
+`;
+
+exports[`updates component style when passed a style object 1`] = `
+<button
+  className="Button"
+  onClick={undefined}
+  style={
+    Object {
+      "background": "white",
+      "color": "red",
+    }
+  }
+>
+  
+</button>
+`;

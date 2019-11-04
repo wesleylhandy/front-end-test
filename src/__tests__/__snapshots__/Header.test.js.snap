@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="header"
+>
+  <img
+    alt="logo"
+    className="header__logo"
+    src="logo.svg"
+  />
+  <h1
+    className="header__title"
+  >
+    Notes Viewer Test App
+  </h1>
+  <div
+    className="header__unread-count"
+  >
+    Unread:
+    <span
+      className="header__unread-count--count"
+    >
+      0
+    </span>
+  </div>
+</header>
+`;
+
+exports[`updates unread count when props change 1`] = `
+<header
+  className="header"
+>
+  <img
+    alt="logo"
+    className="header__logo"
+    src="logo.svg"
+  />
+  <h1
+    className="header__title"
+  >
+    Notes Viewer Test App
+  </h1>
+  <div
+    className="header__unread-count"
+  >
+    Unread:
+    <span
+      className="header__unread-count--count"
+    >
+      20
+    </span>
+  </div>
+</header>
+`;

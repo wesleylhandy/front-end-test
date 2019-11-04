@@ -1,6 +1,7 @@
 import React from "react";
 import checkMark from "../../SVG/check-mark.svg";
 import classNames from "classnames";
+import PropTypes from "prop-types";
 import "./sidebar.css";
 
 const Sidebar = ({ notes = [], currentNoteIndex, selectNote }) => (
@@ -28,5 +29,17 @@ const Sidebar = ({ notes = [], currentNoteIndex, selectNote }) => (
 		</div>
 	</section>
 );
+
+Sidebar.propTypes = {
+	notes: PropTypes.arrayOf(
+		PropTypes.shape({
+			subject: PropTypes.string.isRequired,
+			body: PropTypes.string.isRequired,
+			read: PropTypes.bool.isRequired,
+		})
+	),
+	currentNoteIndex: PropTypes.number.isRequired,
+	selectNote: PropTypes.func.isRequired,
+};
 
 export default Sidebar;

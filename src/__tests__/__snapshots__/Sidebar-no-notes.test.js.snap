@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders '--Empty--' when it receive 0 notes 1`] = `
+<section
+  className="NotesSidebar"
+>
+  <h2
+    className="NotesSidebar__title"
+  >
+    Available Notes:
+  </h2>
+  <div
+    className="NotesSidebar__list"
+  >
+    <div
+      className="NotesSidebarItem empty"
+    >
+      --Empty--
+    </div>
+  </div>
+</section>
+`;

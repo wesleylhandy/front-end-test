@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[object Object] 1`] = `
+Object {
+  "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non velit vehicula lacus dictum tristique. Quisque ac justo magna. Duis eu est purus. Quisque ut enim tortor. Morbi interdum risus a lorem posuere dapibus. Morbi orci est, varius sed dolor quis, efficitur scelerisque sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean at libero sapien. Morbi ultrices malesuada nisl, sit amet aliquam ipsum egestas non. Nunc at massa vel metus vestibulum fringilla in vitae est. Pellentesque eget lorem eget arcu eleifend pretium nec sed tortor. Cras tristique ex quis aliquam vulputate.",
+  "read": true,
+  "subject": "Lorem ipsum dolor sit amet",
+}
+`;
+
+exports[`instance is null when note prop is empty object 1`] = `null`;
+
+exports[`renders correctly 1`] = `
+<section
+  className="NoteDetails"
+>
+  <h3
+    className="NoteDetails__title"
+  >
+    Lorem ipsum dolor sit amet
+  </h3>
+  <p
+    className="NoteDetails__subject"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non velit vehicula lacus dictum tristique. Quisque ac justo magna. Duis eu est purus. Quisque ut enim tortor. Morbi interdum risus a lorem posuere dapibus. Morbi orci est, varius sed dolor quis, efficitur scelerisque sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean at libero sapien. Morbi ultrices malesuada nisl, sit amet aliquam ipsum egestas non. Nunc at massa vel metus vestibulum fringilla in vitae est. Pellentesque eget lorem eget arcu eleifend pretium nec sed tortor. Cras tristique ex quis aliquam vulputate.
+  </p>
+  <button
+    className="Button"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    Mark as unread
+  </button>
+</section>
+`;

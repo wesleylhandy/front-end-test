@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="NotesSidebar"
+>
+  <h2
+    className="NotesSidebar__title"
+  >
+    Available Notes:
+  </h2>
+  <div
+    className="NotesSidebar__list"
+  >
+    <div
+      className="NotesSidebarItem"
+      id="note-0"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Lorem ipsum dolor sit amet
+      </h4>
+      <img
+        alt="Check Mark"
+        src="check-mark.svg"
+      />
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-1"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Aliquam aliquet sem mauris
+      </h4>
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-2"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Nam et feugiat mi, ut aliq
+      </h4>
+      <img
+        alt="Check Mark"
+        src="check-mark.svg"
+      />
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-3"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Duis nec libero a sem euis
+      </h4>
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-4"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Cras tortor lacus, mattis 
+      </h4>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`toggles read check mark when read status is toggled 1`] = `
+<section
+  className="NotesSidebar"
+>
+  <h2
+    className="NotesSidebar__title"
+  >
+    Available Notes:
+  </h2>
+  <div
+    className="NotesSidebar__list"
+  >
+    <div
+      className="NotesSidebarItem"
+      id="note-0"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Lorem ipsum dolor sit amet
+      </h4>
+      <img
+        alt="Check Mark"
+        src="check-mark.svg"
+      />
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-1"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Aliquam aliquet sem mauris
+      </h4>
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-2"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Nam et feugiat mi, ut aliq
+      </h4>
+      <img
+        alt="Check Mark"
+        src="check-mark.svg"
+      />
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-3"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Duis nec libero a sem euis
+      </h4>
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-4"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Cras tortor lacus, mattis 
+      </h4>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`toggles read check mark when read status is toggled 2`] = `
+<section
+  className="NotesSidebar"
+>
+  <h2
+    className="NotesSidebar__title"
+  >
+    Available Notes:
+  </h2>
+  <div
+    className="NotesSidebar__list"
+  >
+    <div
+      className="NotesSidebarItem"
+      id="note-0"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Lorem ipsum dolor sit amet
+      </h4>
+      <img
+        alt="Check Mark"
+        src="check-mark.svg"
+      />
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-1"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Aliquam aliquet sem mauris
+      </h4>
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-2"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Nam et feugiat mi, ut aliq
+      </h4>
+      <img
+        alt="Check Mark"
+        src="check-mark.svg"
+      />
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-3"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Duis nec libero a sem euis
+      </h4>
+      <img
+        alt="Check Mark"
+        src="check-mark.svg"
+      />
+    </div>
+    <div
+      className="NotesSidebarItem"
+      id="note-4"
+      onClick={[Function]}
+      role="button"
+    >
+      <h4
+        className="NotesSidebarItem__title"
+      >
+        Cras tortor lacus, mattis 
+      </h4>
+    </div>
+  </div>
+</section>
+`;
