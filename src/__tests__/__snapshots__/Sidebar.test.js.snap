@@ -219,10 +219,6 @@ exports[`toggles read check mark when read status is toggled 2`] = `
       >
         Nam et feugiat mi, ut aliq
       </h4>
-      <img
-        alt="Check Mark"
-        src="check-mark.svg"
-      />
     </div>
     <div
       className="NotesSidebarItem"
@@ -235,10 +231,6 @@ exports[`toggles read check mark when read status is toggled 2`] = `
       >
         Duis nec libero a sem euis
       </h4>
-      <img
-        alt="Check Mark"
-        src="check-mark.svg"
-      />
     </div>
     <div
       className="NotesSidebarItem"

@@ -44,7 +44,7 @@ class AppProvider extends Component {
 		getNotes: async () => {
 			try {
 				fetchMock.get("http://fake.com", testBody.notes);
-                const notes = await callApi("http://fake.com", { method: "GET" });
+				const notes = await callApi("http://fake.com", { method: "GET" });
 				this.setState(state => reducer(state, { type: ADD_NOTES, notes }));
 			} catch (e) {
 				console.error({ e });
